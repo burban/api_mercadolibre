@@ -55,7 +55,7 @@ require 'api.php';
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Sitios:</h6>
-                        <a class="collapse-item" href="https://www.mq.cl">MQ-Home</a>
+                        <a class="collapse-item" href="https://www.algunsitio.cl">MQ-Home</a>
                         <a class="collapse-item menu-active" href="#">Correos</a>
                       <!--   <a class="collapse-item" href="register.html">Register</a>
                         <a class="collapse-item" href="forgot-password.html">Forgot Password</a>

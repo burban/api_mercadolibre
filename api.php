@@ -18,13 +18,10 @@ if(!isset($_SESSION))
 //ignore_user_abort();
 
 //CONSTANTS
-//$client_id = "8018508322850186"; //1129320816236476
-$client_id = "3886350143980387";
-//$client_secret = "qiudXLcMvAUhxzjd6i1r4qGgA8UyhifF"; //sNyXOPPhOrfGkOdht7Bj4mx4JuXgCfwV
-// $client_secret = "fNRRo2pRnlqbX47jdVBfBovCGgUbACdl"; 
-$client_secret = "36VSxKnfQ8W98b0T6UMP1mPCfrLjRvkc"; 
-$redirect_uri = "https://www.quindosmontalva.cl/api/index.php";
-$sellerId = "292006485";
+$client_id = "892345739456789";
+$client_secret = "3asdfsdfFskjdhJ(6f8Dds"; 
+$redirect_uri = "{URL REDIRECT}";
+$sellerId = "{Numero Seller}";
 $categoriaInmubles = "MLC1459";
 
 $arrayPublicacionesActualizadas = array();//Para información envío de correo
@@ -270,7 +267,7 @@ function sendMail($para, $asunto, $mensaje){
 	    
 		$cabeceras  = 'MIME-Version: 1.0' . "\r\n";
 		$cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-		$cabeceras .= 'From: No-Responder <no-reply@mq.cl>' . "\r\n";
+		$cabeceras .= 'From: No-Responder <no-reply@algunsitio.cl>' . "\r\n";
 		mail($para, $asunto, $mensaje, $cabeceras);
 	}
 	catch (Exception $e) {
@@ -376,7 +373,7 @@ function automatico(){
 		
 		$thead .= $tbody . " </table> ";
 		
-		sendMail($para, "TEST TEST quindosmontalva.cl || API Sincronizacion Registros MQ-MercadoLibre", "Sincronizacion realizada correctamente, </br></br><b>TOTAL PUBLICACIONES:".$cantidadRegistroAPI."</b> </br></br> <b> <i> ULTIMAS PUBLICACIONES: </i> </b> </br>".$thead );
+		sendMail($para, "TOTAL PUBLICACIONES:".$cantidadRegistroAPI."</b> </br></br> <b> <i> ULTIMAS PUBLICACIONES: </i> </b> </br>".$thead );
 		
 		//sendMail($para, "API Sincronizacion Registros MQ-MercadoLibre", "Sincronizacion realizada correctamente, </br> <b>MODIFICAR api.php automatico() </b> </br></br> <i> Propiedades: </i> </br>" );
 		

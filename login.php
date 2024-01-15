@@ -5,7 +5,7 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$curl = curl_init();
 	curl_setopt_array($curl, array(
-	  CURLOPT_URL => 'https://www.quindosmontalva.cl/wp-json/jwt-auth/v1/token',
+	  CURLOPT_URL => 'https://www.algunsitio.cl/wp-json/jwt-auth/v1/token',
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => '',
 	  CURLOPT_MAXREDIRS => 10,
