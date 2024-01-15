@@ -1,0 +1,73 @@
+
+
+******************************
+******************************
+
+	1 * Registrar librerias en el sitio : 
+WP-API-develop.zip
+wp-api-jwt-auth-develop.zip
+
+
+******************************
+******************************
+
+	2 * En el archivo wp-config.php se debe registrar las 2 lineas de acontinuacion, para que el JSONWEBTOKEN funcione correctamente,
+
+define('JWT_AUTH_SECRET_KEY', 'aLeR3523Xhd@343?');
+define('JWT_AUTH_CORS_ENABLE', true);
+
+Como referencia :
+/*
+
+define( 'AUTH_KEY',         '9i318ewhcf8qkrgll8m7wrjjmuz3worf9o6wsuc7kbrybmf7qczeroxdcqdrkzsk' );
+define( 'SECURE_AUTH_KEY',  'axxjrrcvijbq5bg2tjee8x57sl43m2kf7ubbbaovh24n3s4kqwf0ydycyufbx0wa' );
+define( 'LOGGED_IN_KEY',    'pczn5gamaeirxafou0wpygmikqughrjptxk7ftsnyhsdc3frqhl8p2vjoj3cybxo' );
+define( 'NONCE_KEY',        'bsgesrg7wzolq2jiqvmgauagakyyqgl2ffojiyvrz13yv9g0rj60q9hhvc2mltep' );
+define( 'AUTH_SALT',        'u7t1wnjqjfotzgjk6qetnltu9vlot4u5xgh41z3aodadzvvzaqbvbbl569kkpogp' );
+define( 'SECURE_AUTH_SALT', 't5p0pcntvbfneet7ozupt9khp4dystxjzq8yskmto9eswpyxdylvhawwymcqcsvx' );
+define( 'LOGGED_IN_SALT',   '6hlijnzvaingytupfzaehqs3b2xfnzezzou3qhgyvcas5rlouuzd4ky81uorzjy2' );
+define( 'NONCE_SALT',       'tud7g76pt1gfq7xzejduijcv6qxeeswxychctw5tuuruuzwqnvhjkxdxdusn2dwl' );
+
+/**#@-*/
+
+/**
+ * WordPress database table prefix.
+ *
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
+ */
+$table_prefix = 'wpep_';
+
+define('JWT_AUTH_SECRET_KEY', 'aLeR3523Xhd@343?');
+define('JWT_AUTH_CORS_ENABLE', true);
+
+/**
+ * For developers: WordPress debugging mode.
+ *
+ * Change this to true to enable the display of notices during development.
+ * It is strongly recommended that plugin and theme developers use WP_DEBUG
+ * in their development environments.
+ *
+ * For information on other constants that can be used for debugging,
+ * visit the documentation.
+ *
+ * @link https://wordpress.org/support/article/debugging-in-wordpress/
+ */
+define( 'WP_DEBUG', false );
+
+/* Add any custom values between this line and the "stop editing" line. */
+
+
+
+/* That's all, stop editing! Happy publishing. */
+
+/** Absolute path to the WordPress directory. */
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', __DIR__ . '/' );
+}
+
+/** Sets up WordPress vars and included files. */
+require_once ABSPATH . 'wp-settings.php';
+
+
+*/
